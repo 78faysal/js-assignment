@@ -46,9 +46,18 @@ function publicBusFare (totalMember) {
     const publicMember = busRemainingMember - microbusMember;
     console.log('Your total member for public bus ', publicMember, ' and they need ', 250 * publicMember, 'taka gari bara')
 }
-publicBusFare(147)
+// publicBusFare(147)
 
 
 /////////////////////****************************///////////////////////
 
 
+function isBestFriend (friend1, friend2) {
+    if((friend1.name == friend2.friend) && (friend2.name == friend1.friend)){
+        return true;
+    }
+    else{
+        return false
+    }
+}
+console.log(isBestFriend({name: 'masum', friend: 'karina'}, {name: 'rupa', friend: 'masum'}))
