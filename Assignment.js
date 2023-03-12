@@ -2,7 +2,7 @@
 function radianToDegree(radianValue) {
     return radianValue * (180 / 3.1416)
 }
-// console.log(radianToDegree(23.4))
+console.log(radianToDegree(23.4))
 
 
 /////////////////*******************************************///////////////////////
@@ -17,7 +17,7 @@ function isJavaScriptFile(fileName) {
         return false;
     }
 }
-// console.log(isJavaScriptFile('myFile.js'))
+console.log(isJavaScriptFile('myFile.js'))
 
 
 /////////////////////****************************///////////////////
@@ -33,12 +33,12 @@ function oilPrice (diesel, petrol, octane){
 
     return "Your total oil price is -> "+  totalPrice
 }
-// console.log(oilPrice(0, 1, 1))
+console.log(oilPrice(0, 1, 1))
 
 
 /////////////////////****************************///////////////////
 
-
+//4th Total car rental for remaining member to go with public bus 
 function publicBusFare (totalMember) {
     const busMember = Math.floor(totalMember / 50) * 50;
     const busRemainingMember = totalMember - busMember;
@@ -46,12 +46,13 @@ function publicBusFare (totalMember) {
     const publicMember = busRemainingMember - microbusMember;
     console.log('Your total member for public bus ', publicMember, ' and they need ', 250 * publicMember, 'taka gari bara')
 }
-// publicBusFare(147)
+publicBusFare(147)
 
 
 /////////////////////****************************///////////////////////
 
 
+// 5th check for best friend or not 
 function isBestFriend (friend1, friend2) {
     if((friend1.name == friend2.friend) && (friend2.name == friend1.friend)){
         return true;
