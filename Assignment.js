@@ -44,6 +44,11 @@ function publicBusFare (totalMember) {
     const busRemainingMember = totalMember - busMember;
     const microbusMember = Math.floor(busRemainingMember / 11) * 11;
     const publicMember = busRemainingMember - microbusMember;
-    console.log(publicMember)
+    console.log('Your total member for public bus ', publicMember, ' and they need ', 250 * publicMember, 'taka gari bara')
 }
-publicBusFare(146)
+publicBusFare(147)
+
+
+/////////////////////****************************///////////////////////
+
+
